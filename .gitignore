@@ -1,0 +1,8 @@
+# Kaggle data is not committed (too large; download it from the competition page)
+data/*.csv
+submissions/*.csv
+__pycache__/
+.ipynb_checkpoints/
+*.log
+.venv/
+kaggle.json
