@@ -1,0 +1,8 @@
+model,valid RMSLE,note
+constant (geometric mean),0.79665,trivial baseline
+rule: mean by distance bin,0.51379,20 quantile bins of haversine distance
+Ridge (tuned alpha),0.46605,"alpha=0.1, full training part"
+Random forest (300k sample),0.40396,"100 trees, leaf>=10, 138s"
+LightGBM untuned (300k sample),0.39289,"400 trees, 14s"
+LightGBM untuned (full training part),0.38463,400 trees
+LightGBM tuned (full training part),0.3729,"lr 0.03, 3064 trees, 352s"

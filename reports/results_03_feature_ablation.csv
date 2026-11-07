@@ -1,0 +1,10 @@
+experiment,feature groups,valid RMSLE,seconds,Δ vs all features
+add,raw only,0.46004,18,0.07541
+add,raw + datetime,0.41651,24,0.03188
+add,raw + datetime + distance,0.38576,27,0.00113
+add,raw + datetime + distance + pca,0.38501,34,0.00038
+add,raw + datetime + distance + pca + clusters,0.38463,36,0.0
+remove,all − datetime,0.44232,28,0.05769
+remove,all − distance,0.39703,28,0.0124
+remove,all − pca,0.38486,35,0.00023
+remove,all − clusters,0.38501,31,0.00038
