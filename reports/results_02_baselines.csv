@@ -1,0 +1,7 @@
+model,valid RMSLE,note
+constant (arithmetic mean),0.83858,shows why the log matters
+constant (geometric mean),0.79665,trivial baseline
+rule: mean by distance bin,0.51379,20 quantile bins of haversine distance
+"Ridge (one-hot + scaling, all features)",0.46603,"alpha=1, 20s"
+"LightGBM, raw features only",0.46004,"400 trees, 18s"
+"LightGBM, all engineered features",0.38463,"400 trees, 38s"
