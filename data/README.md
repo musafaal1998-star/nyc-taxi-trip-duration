@@ -1,1 +1,1 @@
-
+   Put train.csv and test.csv from the Kaggle competition page (https://www.kaggle.com/competitions/nyc-taxi-trip-duration/data) here. The CSV files are not committed because they are too large for GitHub (see .gitignore).
