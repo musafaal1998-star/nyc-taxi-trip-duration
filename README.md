@@ -71,7 +71,7 @@ jupyter nbconvert --to notebook --execute --inplace notebooks/03_features_models
 Run time on a 2-core laptop: about 15 s, 4 min and 40 min (most of it is the random search) respectively.
 
 ## Validation scheme
-Random 80/20 hold-out (`random_state=42`) — the test set is a random sample of the same period, so a random
+Random 80/20 hold-out (`random_state=42`) the test set is a random sample of the same period, so a random
 split imitates it. The split is made first; cleaning, encoders, scalers, PCA and KMeans are fitted on the
 training part only (inside sklearn pipelines). The validation part is never cleaned, because the test set
 contains the same bad records. Hyper-parameters are tuned with 3-fold CV inside the training part.
